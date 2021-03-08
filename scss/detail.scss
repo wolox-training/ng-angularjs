@@ -1,0 +1,89 @@
+@import 'colors';
+
+.rectangle {
+  background-color: $white-primary;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle-1 {
+  display: flex;
+  height: 416px;
+  width: 900px;
+  background-color: $white-secondary;
+  box-shadow: 4px 4px 10px 0 $swadow;
+}
+
+.container-img {
+  padding: 24px
+}
+
+.img {
+  height: 368px;
+  width: 261px;
+}
+
+.container-book {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: solid $green-lemon;
+  padding-bottom: 12px;
+}
+
+.content-book {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.title-book {
+  color: $black-default;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.title-gender {
+  color: $grey;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-left: 8px;
+}
+
+.tag-atribute {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tag-left {
+    color: $black-default;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 36px;
+}
+
+.tag-rigth {
+    color: $grey;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 36px 0 0 8px;
+}
