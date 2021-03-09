@@ -1,20 +1,20 @@
 @import 'colors';
 
-.rectangle {
-  background-color: $white-primary;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+.container-main {
   align-items: center;
+  background-color: $white-primary;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
 }
 
-.rectangle-1 {
+.container-book {
+  background-color: $white-secondary;
+  box-shadow: 4px 4px 10px 0 $shadow;
   display: flex;
   height: 416px;
   width: 900px;
-  background-color: $white-secondary;
-  box-shadow: 4px 4px 10px 0 $swadow;
 }
 
 .container-img {
@@ -26,64 +26,54 @@
   width: 261px;
 }
 
-.container-book {
+.container-detail {
   display: flex;
-  height: 100%;
-  width: 100%;
-  padding: 24px;
   flex-direction: column;
-}
-
-.header {
-  display: flex;
-  align-items: center;
+  height: 100%;
+  padding: 24px;
   width: 100%;
-  border-bottom: solid $green-lemon;
-  padding-bottom: 12px;
 }
 
-.content-book {
-  display: flex;
+.header-detail {
   align-items: center;
-  flex-direction: row;
+  border-bottom: solid $green-lemon 4px;
+  display: flex;
+  padding-bottom: 12px;
+  width: 100%;
 }
 
 .title-book {
   color: $black-default;
-  font-family: Roboto;
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
+  margin-left: 8px;
 }
 
 .title-gender {
   color: $grey;
-  font-family: Roboto;
   font-size: 24px;
-  font-weight: 700;
   line-height: 28px;
   padding-left: 8px;
 }
 
 .tag-atribute {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin: 36px 0 0 8px;
 }
 
 .tag-left {
-    color: $black-default;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    margin-top: 36px;
+  color: $black-default;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
-.tag-rigth {
-    color: $grey;
-    font-family: Roboto;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 36px 0 0 8px;
+.tag-right {
+  color: $grey;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 8px;
 }
