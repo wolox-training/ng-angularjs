@@ -21,9 +21,16 @@
   padding: 24px
 }
 
-.img {
+.corp {
   height: 368px;
+  position: relative;
   width: 261px;
+}
+
+.corp img {
+  height: auto;
+  position: absolute;
+  width: 100%;
 }
 
 .container-detail {
