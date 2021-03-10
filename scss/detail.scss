@@ -1,5 +1,3 @@
-@import 'colors';
-
 .container-main {
   align-items: center;
   background-color: $white-primary;
@@ -21,7 +19,7 @@
   padding: 24px
 }
 
-.img {
+.cover-image {
   height: 368px;
   width: 261px;
 }
@@ -58,9 +56,6 @@
 }
 
 .detail-form {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
   margin: 36px 0 0 8px;
 }
 
