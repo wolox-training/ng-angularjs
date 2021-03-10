@@ -1,0 +1,74 @@
+.container-main {
+  align-items: center;
+  background-color: $white-primary;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.container-book {
+  background-color: $white-secondary;
+  box-shadow: 4px 4px 10px 0 $shadow;
+  display: flex;
+  height: 416px;
+  width: 900px;
+}
+
+.container-img {
+  padding: 24px
+}
+
+.cover-image {
+  height: 368px;
+  width: 261px;
+}
+
+.container-detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  width: 100%;
+}
+
+.header-detail {
+  align-items: center;
+  border-bottom: 4px solid $green-lemon;
+  display: flex;
+  padding-bottom: 12px;
+  width: 100%;
+}
+
+.title-book {
+  color: $black-default;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-left: 8px;
+}
+
+.title-gender {
+  color: $grey;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 8px;
+}
+
+.detail-form {
+  margin: 36px 0 0 8px;
+}
+
+.detail-item {
+  color: $black-default;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.detail-description {
+  color: $grey;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 8px;
+}
