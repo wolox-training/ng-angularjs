@@ -1,0 +1,14 @@
+.container {
+  align-items: center;
+  background-color: $white-primary;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.img {
+  height: auto;
+  position: absolute;
+  width: 100%;
+}
