@@ -21,7 +21,14 @@
 
 .cover-image {
   height: 368px;
+  position: relative;
   width: 261px;
+}
+
+.cover-image img {
+  height: auto;
+  position: absolute;
+  width: 100%;
 }
 
 .container-detail {
