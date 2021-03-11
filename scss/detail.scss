@@ -7,6 +7,7 @@
 }
 
 .container-img {
+  position: relative;
   height: 100%;
   max-width: 309px;
   padding: 24px;
@@ -17,6 +18,16 @@
   height: auto;
   padding: 24px;
   width: auto;
+}
+
+.container-badge {
+  display: flex;
+  height: 118.57px;
+  width: 94.53px;
+  position: absolute;
+  transform: rotate(15deg);
+  right: -10px;
+  top: -20px;
 }
 
 .header-detail {
