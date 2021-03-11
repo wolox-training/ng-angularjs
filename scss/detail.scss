@@ -7,22 +7,16 @@
 }
 
 .container-img {
-  padding: 24px
-}
-
-.cover-image {
-  height: 368px;
-  position: relative;
-  width: 261px;
-}
-
-
-.container-detail {
-  display: flex;
-  flex-direction: column;
   height: 100%;
+  max-width: 309px;
   padding: 24px;
   width: 100%;
+}
+
+.container-detail {
+  height: auto;
+  padding: 24px;
+  width: auto;
 }
 
 .header-detail {
@@ -44,6 +38,7 @@
 .title-gender {
   color: $grey;
   font-size: 24px;
+  font-weight: 700;
   line-height: 28px;
   padding-left: 8px;
 }
