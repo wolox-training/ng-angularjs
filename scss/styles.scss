@@ -7,7 +7,58 @@
   width: 100vw;
 }
 
+h2 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+h3 {
+  line-height: 28px;
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .img {
   height: 100%;
   width: 100%;
+}
+
+.navbar {
+  height: 70px;
+  width: 100vw;
+  background-color: $white-secondary;
+  box-shadow: 0 4px 10px 0 $shadow;
+  border-top: 4px solid $blue;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+
+  nav-logo {
+    align-items: center;
+    display: flex;
+    height: 70px;
+    justify-content: flex-start;
+    width: 212px;
+    margin-left: 15%;
+  }
+
+  nav-logout {
+    display: flex;
+    align-items: center;
+    margin-left: 54%;
+
+
+    nav-h4 {
+      color: $black-default;
+    }
+  }
 }

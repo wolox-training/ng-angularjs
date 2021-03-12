@@ -4,6 +4,7 @@
   display: flex;
   height: 416px;
   width: 900px;
+  margin-top: 12%;
 }
 
 .container-img {
@@ -40,17 +41,13 @@
 
 .title-book {
   color: $black-default;
-  font-size: 32px;
   font-weight: 700;
-  line-height: 38px;
   margin-left: 8px;
 }
 
 .title-gender {
   color: $grey;
-  font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
   padding-left: 8px;
 }
 
@@ -60,14 +57,10 @@
 
 .detail-item {
   color: $black-default;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
 }
 
 .detail-description {
   color: $grey;
-  font-size: 20px;
-  line-height: 24px;
   margin-left: 8px;
 }
