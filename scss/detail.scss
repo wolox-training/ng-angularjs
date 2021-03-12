@@ -4,10 +4,9 @@
   display: flex;
   height: 416px;
   width: 900px;
-  margin-top: 2%;
 
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     background-color: $white-secondary;
     box-shadow: 4px 4px 10px 0 $shadow;
     display: flex;
@@ -26,7 +25,7 @@
   width: 100%;
   
   
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     position: relative;
     height: 337px;
     padding: 38px 48px 0 48px;
@@ -40,7 +39,7 @@
   width: auto;
 
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     height: 233px;
     padding: 18px;
     width: 336px;
@@ -57,7 +56,7 @@
   top: 9px;
 
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     height: auto;
     padding: 18px;
     width: calc(100%-30%);
@@ -90,7 +89,7 @@
   margin: 36px 0 0 8px;
 
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
    margin-top: 18px;
   }
 }
