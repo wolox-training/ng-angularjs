@@ -5,21 +5,48 @@
   height: auto;
   justify-content: center;
   width: 100vw;
+
+
+  @media only screen and (max-width: 1024px) {
+    align-items: center;
+    background-color: $white-primary;
+    display: flex;
+    height: 376;
+    justify-content: center;
+    width: 667px;
+  }
 }
 
 h2 {
   font-size: 32px;
   line-height: 38px;
+
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 24px;
+    line-height: 38px;
+  }
 }
 
 h3 {
   line-height: 28px;
   font-size: 24px;
+
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 h4 {
   font-size: 20px;
   line-height: 24px;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 h5 {

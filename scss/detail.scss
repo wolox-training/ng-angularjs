@@ -5,6 +5,17 @@
   height: 416px;
   width: 900px;
   margin-top: 12%;
+
+
+  @media only screen and (max-width: 1024px) {
+    background-color: $white-secondary;
+    box-shadow: 4px 4px 10px 0 $shadow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 570px;
+    width: 336px;
+  }
 }
 
 .container-img {
@@ -13,12 +24,27 @@
   max-width: 309px;
   padding: 24px;
   width: 100%;
+  
+  
+  @media only screen and (max-width: 1024px) {
+    position: relative;
+    height: 337px;
+    padding: 38px 48px 0 48px;
+    width: 336px;
+  }
 }
 
 .container-detail {
   height: auto;
   padding: 24px;
   width: auto;
+
+
+  @media only screen and (max-width: 1024px) {
+    height: 233px;
+    padding: 18px;
+    width: 336px;
+  }
 }
 
 .container-badge {
@@ -29,6 +55,15 @@
   transform: rotate(15deg);
   right: -3px;
   top: 9px;
+
+
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+    padding: 18px;
+    width: calc(100%-30%);
+    right: 10px;
+    top: 8px;
+  }
 }
 
 .header-detail {
@@ -53,6 +88,11 @@
 
 .detail-form {
   margin: 36px 0 0 8px;
+
+
+  @media only screen and (max-width: 1024px) {
+   margin-top: 18px;
+  }
 }
 
 .detail-item {
