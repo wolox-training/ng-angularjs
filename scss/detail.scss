@@ -1,12 +1,3 @@
-.container-main {
-  align-items: center;
-  background-color: $white-primary;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  width: 100vw;
-}
-
 .container-book {
   background-color: $white-secondary;
   box-shadow: 4px 4px 10px 0 $shadow;
@@ -16,20 +7,16 @@
 }
 
 .container-img {
-  padding: 24px
-}
-
-.cover-image {
-  height: 368px;
-  width: 261px;
+  height: 100%;
+  max-width: 309px;
+  padding: 24px;
+  width: 100%;
 }
 
 .container-detail {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  height: auto;
   padding: 24px;
-  width: 100%;
+  width: auto;
 }
 
 .header-detail {
@@ -51,6 +38,7 @@
 .title-gender {
   color: $grey;
   font-size: 24px;
+  font-weight: 700;
   line-height: 28px;
   padding-left: 8px;
 }
