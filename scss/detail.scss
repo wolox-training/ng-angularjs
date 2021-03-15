@@ -7,10 +7,22 @@
 }
 
 .container-img {
+  position: relative;
   height: 100%;
   max-width: 309px;
   padding: 24px;
   width: 100%;
+
+  .badge {
+    display: flex;
+    height: 119px;
+    width: 95px;
+    position: absolute;
+    transform: rotate(15deg);
+    right: -6px;
+    top: 0;
+    padding: 11px;
+  }
 }
 
 .container-detail {
