@@ -6,6 +6,7 @@ $total-height: 768px;
   align-items: center;
   background-color: $white-primary;
   display: flex;
+  flex-direction: column;
   height: $total-height;
   justify-content: center;
   width: $total-width;

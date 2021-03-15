@@ -4,6 +4,24 @@ $container-width: 900px;
 $badge-height: 119px;
 $badge-width: 95px;
 
+.back-arrow {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 20px;
+  margin-bottom: 33px;
+  cursor: pointer;
+  
+  h4::before {
+    content: url(./assets/back-arrow-20.png);
+    height: 20px;
+    width: 20px;
+    z-index: 100;
+    margin-right: 12px;
+  }
+}
+
+
 .container-book {
   background-color: $white-secondary;
   box-shadow: 4px 4px 10px 0 $shadow;
