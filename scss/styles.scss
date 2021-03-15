@@ -38,27 +38,19 @@ h6 {
 }
 
 .navbar {
-  height: 70px;
-  width: 1366px;
+  align-items: center;
   background-color: $white-secondary;
-  box-shadow: 0 4px 10px 0 $shadow;
   border-top: 4px solid $blue;
+  box-shadow: 0 4px 10px 0 $shadow;
   display: flex;
+  height: 70px;
+  justify-content: space-around;
   position: fixed;
-  z-index: 100;
+  width: 1366px;
+  z-index: 1;
 
   .nav-logo { 
-    align-items: center;
-    display: flex;
     height: 70px;
-    justify-content: flex-start;
     width: 212px;
-    margin-left: 246px;
-  }
-
-  .nav-logout {
-    display: flex;
-    align-items: center;
-    margin-left: 599px;
   }
 }
