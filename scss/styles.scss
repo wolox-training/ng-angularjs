@@ -9,22 +9,27 @@
 
 h2 {
   font-size: 32px;
-  line-height: 38px;
+  line-height: 32px;
 }
 
 h3 {
   line-height: 28px;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h4 {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 h5 {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .img {
@@ -34,7 +39,7 @@ h5 {
 
 .navbar {
   height: 70px;
-  width: 100vw;
+  width: 1366px;
   background-color: $white-secondary;
   box-shadow: 0 4px 10px 0 $shadow;
   border-top: 4px solid $blue;
@@ -42,23 +47,18 @@ h5 {
   position: fixed;
   z-index: 100;
 
-  nav-logo {
+  .nav-logo { 
     align-items: center;
     display: flex;
     height: 70px;
     justify-content: flex-start;
     width: 212px;
-    margin-left: 23%;
+    margin-left: 246px;
   }
 
-  nav-logout {
+  .nav-logout {
     display: flex;
     align-items: center;
-    margin-left: 39%;
-
-
-    nav-h4 {
-      color: $black-default;
-    }
+    margin-left: 599px;
   }
 }
