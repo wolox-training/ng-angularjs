@@ -1,16 +1,17 @@
+// variables
+$container-height: 416px;
+$container-width: 900px;
+$badge-height: 119px;
+$badge-width: 95px;
 
 .container-book {
   background-color: $white-secondary;
   box-shadow: 4px 4px 10px 0 $shadow;
   display: flex;
-  height: 416px;
-  width: 900px;
+  height: $container-height;
+  width: $container-width;
 
-
-  @media(max-width: 1023px) {
-    background-color: $white-secondary;
-    box-shadow: 4px 4px 10px 0 $shadow;
-    display: flex;
+  @media(max-width: 1024px) {
     flex-direction: column;
     align-items: center;
     height: 570px;
@@ -25,9 +26,7 @@
   padding: 24px;
   width: 100%;
   
-  
-  @media(max-width: 1023px) {
-    position: relative;
+  @media(max-width: 1024px) {
     height: 337px;
     padding: 38px 48px 0 48px;
     width: 336px;
@@ -39,8 +38,7 @@
   padding: 24px;
   width: auto;
 
-
-  @media(max-width: 1023px) {
+  @media(max-width: 1024px) {
     height: 233px;
     padding: 18px;
     width: 336px;
@@ -49,18 +47,18 @@
 
 .container-badge {
   display: flex;
-  height: 118.57px;
-  width: 94.53px;
+  height: $badge-height;
+  width: $badge-width;
   position: absolute;
   transform: rotate(15deg);
-  right: -3px;
-  top: 9px;
+  padding: 10px;
+  right: -5px;
+  top: 0px;
 
-
-  @media(max-width: 1023px) {
-    height: auto;
+  @media(max-width: 1024px) {
+    height: calc($badge-height + 25%);
     padding: 18px;
-    width: calc(100%-30%);
+    width: calc($badge-width + -30%);
     right: 10px;
     top: 8px;
   }
@@ -89,8 +87,7 @@
 .detail-form {
   margin: 36px 0 0 8px;
 
-
-  @media(max-width: 1023px) {
+  @media(max-width: 1024px) {
    margin-top: 18px;
   }
 }
