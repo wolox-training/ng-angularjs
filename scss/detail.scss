@@ -40,12 +40,12 @@ $badge-width: 95px;
 
   @media(max-width: 1024px) {
     height: 233px;
-    padding: 18px;
+    padding: 21px;
     width: 336px;
   }
 }
 
-.container-badge {
+.badge {
   display: flex;
   height: $badge-height;
   width: $badge-width;
