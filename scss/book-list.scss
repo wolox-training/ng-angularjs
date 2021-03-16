@@ -7,6 +7,10 @@
   justify-content: space-around
 }
 
+.card:hover {
+  transform: scale(1.1);
+}
+
 .card {
   background-color: $white-secondary;
   box-shadow: 4px 4px 10px 0 $shadow;
