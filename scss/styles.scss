@@ -21,77 +21,31 @@ $total-width: 1366px;
   }
 }
 
-h2 {
-  font-size:  32px;
-  line-height: 32px;
-
-  @media(max-width: $breackpoint) {
-    font-size: 24px;
-    line-height: 24px;
-  }
-}
-
-h3 {
-  font-size: 24px;
-  line-height: 24px;
-
-  @media(max-width: $breackpoint) {
-    font-size: 16px;
-    line-height: 16px;
-  }
-}
-
-h4 {
-  font-size: 20px;
-  line-height: 20px;
-
-  @media(max-width: $breackpoint) {
-    font-size: 14px;
-    line-height: 14px;
-  }
-}
-
-h5 {
-  font-size: 16px;
-  line-height: 16px;
-}
-
-h6 {
-  font-size: 14px;
-  line-height: 14px;
-}
-
 .img {
   height: 100%;
   width: 100%;
 }
 
 .navbar {
-  height: 70px;
-  width: 1366px;
+  align-items: center;
   background-color: $white-secondary;
-  box-shadow: 0 4px 10px 0 $shadow;
   border-top: 4px solid $blue;
+  box-shadow: 0 4px 10px 0 $shadow;
   display: flex;
+  height: 70px;
+  justify-content: space-around;
   position: fixed;
-  z-index: 100;
+  width: $total-width;
+  z-index: 1;
 
   .nav-logo { 
-    align-items: center;
-    display: flex;
     height: 70px;
-    justify-content: flex-start;
     width: 212px;
-    margin-left: 246px;
   }
 
   .nav-logout {
-    display: flex;
-    align-items: center;
-    margin-left: 39%;
-
-    nav-h4 {
-      color: $black-default;
-    }
+    color: $black-default;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
