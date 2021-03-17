@@ -43,12 +43,16 @@
   color: $black-default;
   font-weight: 700;
   margin-left: 8px;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 .title-gender {
   color: $grey;
   font-weight: 700;
   padding-left: 8px;
+  line-height: 28px;
+  font-size: 28px;
 }
 
 .detail-form {
@@ -58,9 +62,13 @@
 .detail-item {
   color: $black-default;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .detail-description {
   color: $grey;
   margin-left: 8px;
+  font-size: 20px;
+  line-height: 20px;
 }

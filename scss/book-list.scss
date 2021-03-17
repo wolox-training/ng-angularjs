@@ -16,15 +16,19 @@
   margin: 36px 0 0 ;
   width: 198px;
   
-  .title-list {
+  .card-title {
     color: $black-default;
     font-weight: 700;
     margin-left: 24px;
+    font-size: 16px;
+    line-height: 16px;
   }
 
-  .autor {
+  .card-autor {
     color: $grey;
     margin:8px 0 0 24px ;
+    font-size: 14px;
+    line-height: 14px;
   }
   
   .card-img {
