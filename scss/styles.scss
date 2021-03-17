@@ -1,6 +1,7 @@
 // variables
-$total-width: 1366px;
+$breackpoint: 1023px;
 $total-height: 768px;
+$total-width: 1366px;
 
 .container {
   align-items: center;
@@ -10,9 +11,13 @@ $total-height: 768px;
   justify-content: center;
   width: $total-width;
 
-  @media(max-width: 1024px) {
-    height: calc($total-height - 13%);
-    width: calc($total-width - 72%);
+  @media(max-width: $breackpoint) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: $breackpoint;
+    height: calc(#{$total-height} - 101px);
+    width: calcl(#{$total-width} - 990px);
   }
 }
 
@@ -20,7 +25,7 @@ h2 {
   font-size:  32px;
   line-height: 32px;
 
-  @media(max-width: 1024px) {
+  @media(max-width: $breackpoint) {
     font-size: 24px;
     line-height: 24px;
   }
@@ -30,7 +35,7 @@ h3 {
   font-size: 24px;
   line-height: 24px;
 
-  @media(max-width: 1024px) {
+  @media(max-width: $breackpoint) {
     font-size: 16px;
     line-height: 16px;
   }
@@ -40,7 +45,7 @@ h4 {
   font-size: 20px;
   line-height: 20px;
 
-  @media(max-width: 1024px) {
+  @media(max-width: $breackpoint) {
     font-size: 14px;
     line-height: 14px;
   }

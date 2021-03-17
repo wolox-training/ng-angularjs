@@ -1,8 +1,9 @@
 // variables
-$container-height: 416px;
-$container-width: 900px;
 $badge-height: 119px;
 $badge-width: 95px;
+$breackpoint: 1023px;
+$container-height: 416px;
+$container-width: 900px;
 
 .container-book {
   background-color: $white-secondary;
@@ -11,11 +12,11 @@ $badge-width: 95px;
   height: $container-height;
   width: $container-width;
 
-  @media(max-width: 1024px) {
+  @media(max-width: $breackpoint) {
     flex-direction: column;
     align-items: center;
-    height: 570px;
-    width: 336px;
+    height: calc(#{$container-height} + 154px);
+    width: calc(#{$container-width} - 564px);
   }
 }
 
@@ -26,9 +27,9 @@ $badge-width: 95px;
   padding: 24px;
   width: 100%;
   
-  @media(max-width: 1024px) {
+  @media(max-width: $breackpoint) {
     height: 337px;
-    padding: 38px 48px 0 48px;
+    padding: 38px 48px 0;
     width: 336px;
   }
 }
@@ -38,7 +39,7 @@ $badge-width: 95px;
   padding: 24px;
   width: auto;
 
-  @media(max-width: 1024px) {
+  @media(max-width: $breackpoint) {
     height: 233px;
     padding: 21px;
     width: 336px;
@@ -55,12 +56,12 @@ $badge-width: 95px;
   right: -5px;
   top: 0px;
 
-  @media(max-width: 1024px) {
-    height: calc($badge-height + 25%);
-    padding: 18px;
-    width: calc($badge-width + -30%);
-    right: 10px;
-    top: 8px;
+  @media(max-width: $breackpoint) {
+    height: calc(#{$badge-height} - 5%);
+    padding: 8px;
+    width: calc(#{$badge-width} - 3%);
+    right: 20px;
+    top: 18px;
   }
 }
 
@@ -87,7 +88,7 @@ $badge-width: 95px;
 .detail-form {
   margin: 36px 0 0 8px;
 
-  @media(max-width: 1024px) {
+  @media(max-width: $breackpoint) {
    margin-top: 18px;
   }
 }
