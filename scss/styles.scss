@@ -1,5 +1,4 @@
 // variables
-$breackpoint: 1023px;
 $total-height: 768px;
 $total-width: 1366px;
 
@@ -11,11 +10,11 @@ $total-width: 1366px;
   justify-content: center;
   width: $total-width;
 
-  @media(max-width: $breackpoint) {
+  @media(max-width: $breakpoint) {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: $breackpoint;
+    max-width: $breakpoint;
     height: calc(#{$total-height} - 101px);
     width: calcl(#{$total-width} - 990px);
   }
