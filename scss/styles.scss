@@ -11,3 +11,21 @@
   height: 100%;
   width: 100%;
 }
+
+.navbar {
+  align-items: center;
+  background-color: $white-secondary;
+  border-top: 4px solid $blue;
+  box-shadow: 0 4px 10px 0 $shadow;
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  position: fixed;
+  width: 1366px;
+  z-index: 1;
+
+  .nav-logo { 
+    height: 70px;
+    width: 212px;
+  }
+}

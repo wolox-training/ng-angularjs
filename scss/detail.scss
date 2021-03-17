@@ -41,18 +41,18 @@
 
 .title-book {
   color: $black-default;
-  font-size: 32px;
   font-weight: 700;
-  line-height: 38px;
   margin-left: 8px;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 .title-gender {
   color: $grey;
-  font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
   padding-left: 8px;
+  line-height: 28px;
+  font-size: 28px;
 }
 
 .detail-form {
@@ -61,14 +61,14 @@
 
 .detail-item {
   color: $black-default;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .detail-description {
   color: $grey;
-  font-size: 20px;
-  line-height: 24px;
   margin-left: 8px;
+  font-size: 20px;
+  line-height: 20px;
 }
