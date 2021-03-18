@@ -1,10 +1,6 @@
-// variables
-$breakpoint: 1023px;
-
-// imports
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import 'equalizer.scss';
-@import 'colors';
+@import 'variables';
 @import 'styles';
 @import 'detail';
 @import 'book-list';
