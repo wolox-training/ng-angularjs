@@ -10,39 +10,20 @@ $container-width: 900px;
   display: flex;
   height: $container-height;
   width: $container-width;
-
-  @media(max-width: $breakpoint) {
-    flex-direction: column;
-    align-items: center;
-    height: calc(#{$container-height} + 154px);
-    width: calc(#{$container-width} - 564px);
-  }
 }
 
 .container-img {
   position: relative;
-  height: 100%;
+  height: 416px;
   max-width: 309px;
   padding: 24px;
-  width: 100%;
-  
-  @media(max-width: $breakpoint) {
-    height: 337px;
-    padding: 38px 48px 0;
-    width: 336px;
-  }
+  width: 309px;
 }
 
 .container-detail {
   height: auto;
   padding: 24px;
   width: auto;
-
-  @media(max-width: $breakpoint) {
-    height: 233px;
-    padding: 21px;
-    width: 336px;
-  }
 }
 
 .badge {
@@ -54,14 +35,6 @@ $container-width: 900px;
   padding: 10px;
   right: -5px;
   top: 0px;
-
-  @media(max-width: $breakpoint) {
-    height: calc(#{$badge-height} - 5%);
-    padding: 8px;
-    width: calc(#{$badge-width} - 3%);
-    right: 20px;
-    top: 18px;
-  }
 }
 
 .header-detail {
@@ -90,10 +63,6 @@ $container-width: 900px;
 
 .detail-form {
   margin: 36px 0 0 8px;
-
-  @media(max-width: $breakpoint) {
-   margin-top: 18px;
-  }
 }
 
 .detail-item {
@@ -108,4 +77,51 @@ $container-width: 900px;
   margin-left: 8px;
   font-size: 20px;
   line-height: 20px;
+}
+
+@media(max-width: $breakpoint) {
+  .container-book {
+    flex-direction: column;
+    align-items: center;
+    height: calc(#{$container-height} + 154px);
+    width: calc(#{$container-width} - 564px);
+  }
+
+  .container-img {
+    height: 337px;
+    padding: 38px 48px 0;
+    width: 336px;
+  }
+
+  .badge {
+    height: calc(#{$badge-height} - 5%);
+    padding: 8px;
+    width: calc(#{$badge-width} - 5%);
+    right: 22px;
+    top: 18px;
+  }
+  
+  .title-book {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .title-gender {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .detail-form {
+    margin-top: 18px;
+  }
+
+  .detail-item {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .detail-description {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
