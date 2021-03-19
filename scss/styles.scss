@@ -39,6 +39,6 @@
 @media(max-width: $breakpoint) {
   .container {
     height: calc(#{$total-height} - 101px);
-    width: calcl(#{$total-width} - 990px);
+    width: calc(#{$total-width} - 990px);
   }
 }
