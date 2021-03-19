@@ -21,80 +21,79 @@ $badge-width: 95px;
   }
 }
 
-
 .container-book {
   background-color: $white-secondary;
   box-shadow: 4px 4px 10px 0 $shadow;
   display: flex;
   height: $container-height;
   width: $container-width;
-}
 
-.container-img {
-  position: relative;
-  height: 100%;
-  max-width: 309px;
-  padding: 24px;
-  width: 100%;
-}
-
-.container-detail {
-  height: 100%;
-  padding: 24px;
-  width: 615px;
-}
-
-.badge {
-  display: flex;
-  height: $badge-height;
-  width: $badge-width;
-  position: absolute;
-  transform: rotate(15deg);
-  padding: 10px;
-  right: -5px;
-  top: 0px;
-}
-
-.header-detail {
-  align-items: center;
-  border-bottom: 4px solid $green-lemon;
-  display: flex;
-  padding-bottom: 12px;
-  width: 100%;
-}
-
-.title-book {
-  color: $black-default;
-  font-weight: 700;
-  margin-left: 8px;
-  font-size:  32px;
-  line-height: 32px;
-}
-
-.title-gender {
-  color: $grey;
-  font-weight: 700;
-  padding-left: 8px;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.detail-form {
-  margin: 36px 0 0 8px;
-}
-
-.detail-item {
-  color: $black-default;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.detail-description {
-  color: $grey;
-  margin-left: 8px;
-  font-size: 20px;
-  line-height: 20px;
+  .container-img {
+    position: relative;
+    height: 100%;
+    max-width: 309px;
+    padding: 24px;
+    width: 100%;
+  
+    .badge {
+      display: flex;
+      height: $badge-height;
+      width: $badge-width;
+      position: absolute;
+      transform: rotate(15deg);
+      padding: 10px;
+      right: -5px;
+      top: 0px;
+    }
+  }
+  
+  .container-detail {
+    height: 100%;
+    padding: 24px;
+    width: 615px;
+  
+    .header-detail {
+      align-items: center;
+      border-bottom: 4px solid $green-lemon;
+      display: flex;
+      padding-bottom: 12px;
+      width: 100%;
+      
+      .title-book {
+        color: $black-default;
+        font-weight: 700;
+        margin-left: 8px;
+        font-size:  32px;
+        line-height: 32px;
+      }
+      
+      .title-gender {
+        color: $grey;
+        font-weight: 700;
+        padding-left: 8px;
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+    
+    .detail-form {
+      margin: 36px 0 0 8px;
+    
+      .detail-item {
+        color: $black-default;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+      }
+      
+      .detail-description {
+        color: $grey;
+        margin-left: 8px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
 }
 
 @media(max-width: 1024px) {
@@ -106,68 +105,70 @@ $badge-width: 95px;
     justify-content: center;
     height: calc(#{$total-height} - 101px);
     width: calc(#{$total-width} - 990px);
-  }
-
-  .back-arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1024px;
-    width: auto;
-    height: 20px;
-    margin-top: 33px;
-    cursor: pointer;
-  }
-
-  .container-book {
-    flex-direction: column;
-    align-items: center;
-    height: 570px;
-    width: 336px;
-  }
-
-  .container-img {
-    height: 337px;
-    padding: 38px 48px 0 48px;
-    width: 336px;
-  }
-
-  .container-detail {
-    height: 233px;
-    padding: 21px;
-    width: 336px;
-  }
-
-  .badge {
-    height: calc($badge-height + 25%);
-    padding: 18px;
-    width: calc($badge-width + -30%);
-    right: 10px;
-    top: 8px;
-  }
-
-  .detail-form {
-    margin-top: 18px;
-  }
-
-  .title-book{
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  .title-gender {
-    font-size: 16px;
-    line-height: 16px;
-  }
-
-  .detail-item {
-    font-size: 14px;
-    line-height: 14px;
-  }
-
-  .detail-description {
-    font-size: 14px;
-    line-height: 14px;
+    
+    .back-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1024px;
+      width: auto;
+      height: 20px;
+      margin-top: 33px;
+      cursor: pointer;
+    }
+    
+    .container-book {
+      flex-direction: column;
+      align-items: center;
+      height: 570px;
+      width: 336px;
+      
+      .container-img {
+        height: 337px;
+        padding: 38px 48px 0 48px;
+        width: 336px;
+    
+        .badge {
+          height: calc($badge-height + 25%);
+          padding: 18px;
+          width: calc($badge-width + -30%);
+          right: 10px;
+          top: 8px;
+        }
+      }
+      
+      .container-detail {
+        height: 233px;
+        padding: 21px;
+        width: 336px;
+        
+        .header-detail {
+          .title-book{
+            font-size: 24px;
+            line-height: 24px;
+          }
+      
+          .title-gender {
+            font-size: 16px;
+            line-height: 16px;
+          }
+        }
+      
+        .detail-form {
+          margin-top: 18px;
+      
+          .detail-item {
+            font-size: 14px;
+            line-height: 14px;
+          }
+      
+          .detail-description {
+            font-size: 14px;
+            line-height: 14px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -176,82 +177,196 @@ $badge-width: 95px;
     height: 768px;
     width: 1024px;
     display: grid;
+    justify-items: center;
     grid-template-rows: 53px 1fr;
     grid-template-columns: 1fr;
-  }
-  .back-arrow {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 853px;
-    height: 20px;
-    margin-top: 33px;
-    cursor: pointer;
-  }
 
-  .container-book {
-    height: 569px;
-    width: 853px;
-    align-items: start;
-    background-color: $white-secondary;
-    box-shadow: 4px 4px 10px 0 $shadow;
+    .back-arrow {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 853px;
+      height: 20px;
+      margin-top: 33px;
+      cursor: pointer;
+    }
+  
+    .container-book {
+      height: 569px;
+      width: 853px;
+      align-items: start;
+      background-color: $white-secondary;
+      box-shadow: 4px 4px 10px 0 $shadow;
+      display: grid;
+      grid-template-columns: 325px 1fr;
+      grid-template-rows: 100px 1fr;
+      grid-template-areas: "detai detail"
+      "image detail";
+  
+      .container-img {
+        height: 368px;
+        width: 261px;
+        margin: 45px 32px 56px;
+        padding: 0;
+        grid-area: image;
+    
+        .badge {
+          right: -35px;
+          top: -30px;
+        }
+      }
+    
+      .container-detail {
+        grid-area: detail;
+        display: grid;
+        grid-template-rows: 200px 58px 58px 58px auto;
+        grid-template-columns: 1ft;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        grid-template-areas: "header"
+        "form";
+    
+        .header-detail {
+          display: grid;
+          grid-template-rows: 39px 38px 1ft;
+          grid-template-columns: auto;
+          align-items: center;
+          border-bottom: 0;
+          height: 69px;
+          margin-top: 32px;
+          grid-area: "header";
+      
+          .title-book{
+            font-size: 32px;
+            line-height: 32px;
+          }
+        
+          .title-gender {
+            align-items: start;
+            margin-left: 70px;
+            font-size: 24px;
+            line-height: 24px;
+          }
+        }
+      
+        .detail-form {
+          margin-top: 18px;
+          width: 100%;
+          height: 100%;
+
+          .detail-item {
+            font-size: 24px;
+            line-height: 24px;
+          }
+        
+          .detail-description {
+            font-size: 24px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 368px) {
+  .container {
+    height: 667px;
+    width: 376px;
     display: grid;
-    grid-template-columns: 325px 1fr;
-    grid-template-rows: 100px 1fr;
+    justify-items: center;
+    grid-template-rows: 1fr 53px;
+    grid-template-columns: 1fr;
+
+    .back-arrow {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 336px;
+      height: 20px;
+      margin-top: 33px;
+      cursor: pointer;
+    }
+  
+    .container-book {
+      height: 570px;
+      width: 336px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 299px 1fr;
+      grid-template-areas: "image"
+      "detalle";
+
+      .container-img {
+        height: 299px;
+        width: 212px;
+        margin: 20px 62px 24px;
+        padding: 0;
+        grid-area: image;
+    
+        .badge {
+          right: -35px;
+          top: -30px;
+        }
+      }
+
+      .container-detail {
+        display: grid;
+        grid-area: detalle;
+        grid-template-rows: 58px auto;
+        grid-template-columns: 1ft;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        grid-template-areas: "header"
+        "form";
+
+        .header-detail {
+          display: grid;
+          grid-template-rows: 39px 38px 1ft;
+          grid-template-columns: 1fr;
+          align-items: center;
+          border-bottom: 4px solid $green-lemon;
+          height: 69px;
+          margin-top: 32px;
+          grid-area: header;
+          grid-template-areas: "title" "genedr";
+
+          .title-book{
+            font-size: 24px;
+            line-height: 24px;
+            grid-area: title;
+          }
+        
+          .title-gender {
+            margin-left: 70px;
+            font-size: 16px;
+            line-height: 16px;
+            grid-area: gender;
+          }
+        }
+
+        .detail-form {
+          margin: 18px 16px 0;
+          width: 100%;
+          height: 100%;
+
+          .detail-item {
+            font-size: 14px;
+            line-height: 14px;
+          }
+        
+          .detail-description {
+            font-size: 14px;
+            line-height: 14px;
+          }
+        }
+      }
+    }
   }
-
-  .container-img {
-    height: 368px;
-    width: 261px;
-    margin: 45px 32px 56px;
-    padding: 0;
-    grid-area: 2 / 1 / 3 / 2;
-  }
-
-  .container-detail {
-    grid-area: 1 / 2 / 3 / 3;
-    display: grid;
-  }
-
-  // .badge {
-  //   height: calc($badge-height + 25%);
-  //   padding: 18px;
-  //   width: calc($badge-width + -30%);
-  //   right: 10px;
-  //   top: 8px;
-  // }
-
-  // .header-detail {
-  //   align-items: center;
-  //   border-bottom: 4px solid $green-lemon;
-  //   display: flex;
-  //   padding-bottom: 12px;
-  //   width: 100%;
-  // }
-
-  // .detail-form {
-  //   margin-top: 18px;
-  // }
-
-  // .title-book{
-  //   font-size: 24px;
-  //   line-height: 24px;
-  // }
-
-  // .title-gender {
-  //   font-size: 16px;
-  //   line-height: 16px;
-  // }
-
-  // .detail-item {
-  //   font-size: 14px;
-  //   line-height: 14px;
-  // }
-
-  // .detail-description {
-  //   font-size: 14px;
-  //   line-height: 14px;
-  // }
 }
