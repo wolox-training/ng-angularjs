@@ -5,20 +5,19 @@ $container-height: 416px;
 $container-width: 900px;
 
 .back-arrow {
-  display: flex;
-  align-items: center;
+  display: flex; 
   width: 90%;
   height: 20px;
   margin-bottom: 33px;
   cursor: pointer;
   
-  h4::before {
-    content: url(./assets/back-arrow-20.png);
-    height: 20px;
-    width: 20px;
-    z-index: 100;
-    margin-right: 12px;
-  }
+}
+
+.back-arrow::before {
+  content: url(./assets/back-arrow-20.png);
+  height: 20px;
+  width: 20px;
+  margin-right: 12px;
 }
 
 .container-book {
@@ -48,9 +47,7 @@ $container-width: 900px;
   }
 
   .container-detail {
-    height: auto;
     padding: 24px;
-    width: auto;
   
     .header-detail {
       align-items: center;
