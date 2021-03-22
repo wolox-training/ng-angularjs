@@ -4,21 +4,20 @@ $container-width: 900px;
 $badge-height: 119px;
 $badge-width: 95px;
 
-.back-arrow {
+.back-arrow { 
   display: flex;
-  align-items: center;
-  width: 90%;
+  width: 1366px;  
   height: 20px;
-  margin-bottom: 33px;
+  padding: 33px;
   cursor: pointer;
+}
   
-  h4::before {
-    content: url(./assets/back-arrow-20.png);
-    height: 20px;
-    width: 20px;
-    z-index: 100;
-    margin-right: 12px;
-  }
+.back-arrow::before {
+  content: url(./assets/back-arrow-20.png);
+  height: 20px;
+  width: 20px;
+  z-index: 100;
+  margin-right: 12px;
 }
 
 .container-book {
@@ -182,15 +181,12 @@ $badge-width: 95px;
     grid-template-columns: 1fr;
 
     .back-arrow {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
-      display: flex;
+      grid-column: 1 / 1 / 3 / 2;
       align-items: center;
       justify-content: flex-start;
       width: 853px;
-      height: 20px;
       margin-top: 33px;
-      cursor: pointer;
+      padding: 0;
     }
   
     .container-book {
@@ -213,8 +209,11 @@ $badge-width: 95px;
         grid-area: image;
     
         .badge {
-          right: -35px;
-          top: -30px;
+          height: calc(#{$badge-height} + 3%);
+          padding: 10px 20px;
+          width: calc(#{$badge-width} + 8%);
+          right: -40px;
+          top: -25px;
         }
       }
     
@@ -277,90 +276,90 @@ $badge-width: 95px;
     height: 667px;
     width: 376px;
     display: grid;
-    justify-items: center;
-    grid-template-rows: 1fr 53px;
-    grid-template-columns: 1fr;
+    padding: 0;
+    grid-template-rows: 602px 65px;
 
     .back-arrow {
-      grid-row: 2 / 3;
-      grid-column: 1 / 2;
-      display: flex;
-      align-items: center;
+      width: 367px;
       justify-content: center;
-      width: 336px;
-      height: 20px;
-      margin-top: 33px;
-      cursor: pointer;
+      margin-bottom: 50px;
+      grid-area: 2/1/3/2;
     }
-  
+
     .container-book {
       height: 570px;
       width: 336px;
+      grid-area: 1/1/2/2;
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 299px 1fr;
-      grid-template-areas: "image"
-      "detalle";
+      grid-template-rows: 60px 310px 56px 144px;
+      align-items: center;
 
       .container-img {
         height: 299px;
-        width: 212px;
-        margin: 20px 62px 24px;
-        padding: 0;
-        grid-area: image;
-    
+        width: 336px;
+        grid-area: 2/1/3/2;
+        padding: 0 57px 0 67px;
+        margin: 0;
+        justify-self: center;
+
         .badge {
-          right: -35px;
-          top: -30px;
+          height: calc(#{$badge-height} - 5%);
+          padding: 10px 15px;
+          width: calc(#{$badge-width} + -3%);
+          right: 28px;
+          top: -21px;
         }
       }
 
       .container-detail {
+        height: 570px;
+        width: 300px;
+        grid-area: 1/1/5/2;
         display: grid;
-        grid-area: detalle;
-        grid-template-rows: 58px auto;
-        grid-template-columns: 1ft;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        grid-template-areas: "header"
-        "form";
+        grid-template-rows: 60px 310px 46px repeat(3, 40px);
 
-        .header-detail {
+        .header-detail{
+          grid-area: 1/1/4/2;
+          width: 336px;
+          padding: 0;
+          margin: 0;
           display: grid;
-          grid-template-rows: 39px 38px 1ft;
-          grid-template-columns: 1fr;
+          grid-template-rows: 60px 310px 56px;
           align-items: center;
-          border-bottom: 4px solid $green-lemon;
-          height: 69px;
-          margin-top: 32px;
-          grid-area: header;
-          grid-template-areas: "title" "genedr";
+          justify-content: center;
+          text-align: center;
 
-          .title-book{
+          .title-book {
+            grid-area: 1/1/2/2;
             font-size: 24px;
+            width: 300px;
             line-height: 24px;
-            grid-area: title;
+            margin: 19px 0 0;
           }
-        
+
           .title-gender {
-            margin-left: 70px;
+            grid-area: 3/1/4/2;
             font-size: 16px;
+            width: 300px;
             line-height: 16px;
-            grid-area: gender;
+            margin: 0;
+            padding: 0 0 12px;
+            border-bottom: 4px solid $green-lemon;
           }
         }
 
         .detail-form {
-          margin: 18px 16px 0;
-          width: 100%;
-          height: 100%;
+          margin: 18px 16px;
+          align-items: start;
+          width: 336px;
+          height: 40px;
+          margin-left: 16px;
 
           .detail-item {
             font-size: 14px;
             line-height: 14px;
           }
-        
+
           .detail-description {
             font-size: 14px;
             line-height: 14px;
