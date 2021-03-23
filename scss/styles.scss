@@ -14,7 +14,7 @@
 }
 
 .navbar {
-  align-items: flex-start;
+  align-items: center;
   background-color: $white-secondary;
   border-top: 4px solid $blue;
   box-shadow: 0 4px 10px 0 $shadow;
@@ -39,10 +39,8 @@
 
 @media(max-width: $breakpoint) {
   .container {
+    height: calc(#{$total-height} - 101px);
+    width: calc(#{$total-width} - 990px);
     flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    height: 707px;
-    width: 376px;
   }
 }
