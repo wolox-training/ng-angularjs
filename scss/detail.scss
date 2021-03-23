@@ -1,24 +1,31 @@
 // variables
-$container-height: 416px;
-$container-width: 900px;
 $badge-height: 119px;
 $badge-width: 95px;
+$container-height: 416px;
+$container-width: 900px;
 
 .back-arrow {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 1150px;
   height: 20px;
-  margin-bottom: 33px;
+  margin: 33px 0;
   cursor: pointer;
-  
-  h4::before {
-    content: url(./assets/back-arrow-20.png);
+
+  .text-back-arrow {
     height: 20px;
-    width: 20px;
-    z-index: 100;
-    margin-right: 12px;
+    width: 59px;
+    font-size: 20px;
+    line-height: 20px;
   }
+}
+  
+.text-back-arrow::before {
+  content: url(./assets/back-arrow-20.png);
+  height: 20px;
+  width: 20px;
+  z-index: 100;
+  margin-right: 12px;
 }
 
 
@@ -28,39 +35,19 @@ $badge-width: 95px;
   display: flex;
   height: $container-height;
   width: $container-width;
-
-  @media(max-width: 1024px) {
-    flex-direction: column;
-    align-items: center;
-    height: 570px;
-    width: 336px;
-  }
 }
 
 .container-img {
   position: relative;
-  height: 100%;
-  max-width: 309px;
+  height: 416px;
   padding: 24px;
-  width: 100%;
-  
-  @media(max-width: 1024px) {
-    height: 337px;
-    padding: 38px 48px 0 48px;
-    width: 336px;
-  }
+  width: 309px;
 }
 
 .container-detail {
   height: 100%;
   padding: 24px;
-  width: 615px;
-
-  @media(max-width: 1024px) {
-    height: 233px;
-    padding: 21px;
-    width: 336px;
-  }
+  width: auto;
 }
 
 .badge {
@@ -72,14 +59,6 @@ $badge-width: 95px;
   padding: 10px;
   right: -5px;
   top: 0px;
-
-  @media(max-width: 1024px) {
-    height: calc($badge-height + 25%);
-    padding: 18px;
-    width: calc($badge-width + -30%);
-    right: 10px;
-    top: 8px;
-  }
 }
 
 .header-detail {
@@ -94,28 +73,83 @@ $badge-width: 95px;
   color: $black-default;
   font-weight: 700;
   margin-left: 8px;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 .title-gender {
   color: $grey;
   font-weight: 700;
   padding-left: 8px;
+  line-height: 28px;
+  font-size: 28px;
 }
 
 .detail-form {
   margin: 36px 0 0 8px;
-
-  @media(max-width: 1024px) {
-   margin-top: 18px;
-  }
 }
 
 .detail-item {
   color: $black-default;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .detail-description {
   color: $grey;
   margin-left: 8px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@media(max-width: $breakpoint) {
+  .container-book {
+    flex-direction: column;
+    align-items: center;
+    height: calc(#{$container-height} + 154px);
+    width: calc(#{$container-width} - 564px);
+  }
+
+  .back-arrow {
+    justify-content: center;
+  }
+
+  .container-img {
+    height: 337px;
+    padding: 38px 48px 0;
+    width: 336px;
+  }
+
+  .badge {
+    height: calc(#{$badge-height} - 5%);
+    padding: 8px;
+    width: calc(#{$badge-width} - 5%);
+    right: 22px;
+    top: 18px;
+  }
+  
+  .title-book {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .title-gender {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .detail-form {
+    margin-top: 18px;
+  }
+
+  .detail-item {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .detail-description {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
