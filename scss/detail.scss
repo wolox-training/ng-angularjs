@@ -1,34 +1,39 @@
+// variables
+$badge-height: 119px;
+$badge-width: 95px;
+$container-height: 416px;
+$container-width: 900px;
+
 .container-book {
   background-color: $white-secondary;
   box-shadow: 4px 4px 10px 0 $shadow;
   display: flex;
-  height: 416px;
-  width: 900px;
+  height: $container-height;
+  width: $container-width;
 }
 
 .container-img {
   position: relative;
-  height: 100%;
-  max-width: 309px;
+  height: 416px;
   padding: 24px;
-  width: 100%;
-
-  .badge {
-    display: flex;
-    height: 119px;
-    width: 95px;
-    position: absolute;
-    transform: rotate(15deg);
-    right: -6px;
-    top: 0;
-    padding: 11px;
-  }
+  width: 309px;
 }
 
 .container-detail {
   height: auto;
   padding: 24px;
   width: auto;
+}
+
+.badge {
+  display: flex;
+  height: $badge-height;
+  width: $badge-width;
+  position: absolute;
+  transform: rotate(15deg);
+  padding: 10px;
+  right: -5px;
+  top: 0px;
 }
 
 .header-detail {
@@ -71,4 +76,51 @@
   margin-left: 8px;
   font-size: 20px;
   line-height: 20px;
+}
+
+@media(max-width: $breakpoint) {
+  .container-book {
+    flex-direction: column;
+    align-items: center;
+    height: calc(#{$container-height} + 154px);
+    width: calc(#{$container-width} - 564px);
+  }
+
+  .container-img {
+    height: 337px;
+    padding: 38px 48px 0;
+    width: 336px;
+  }
+
+  .badge {
+    height: calc(#{$badge-height} - 5%);
+    padding: 8px;
+    width: calc(#{$badge-width} - 5%);
+    right: 22px;
+    top: 18px;
+  }
+  
+  .title-book {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .title-gender {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .detail-form {
+    margin-top: 18px;
+  }
+
+  .detail-item {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .detail-description {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

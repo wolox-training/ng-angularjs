@@ -2,9 +2,9 @@
   align-items: center;
   background-color: $white-primary;
   display: flex;
-  height: 768px;
+  height: $total-height;
   justify-content: center;
-  width: 1366px;
+  width: $total-width;
 }
 
 .img {
@@ -21,11 +21,24 @@
   height: 70px;
   justify-content: space-around;
   position: fixed;
-  width: 1366px;
+  width: $total-width;
   z-index: 1;
 
   .nav-logo { 
     height: 70px;
     width: 212px;
+  }
+
+  .nav-logout {
+    color: $black-default;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media(max-width: $breakpoint) {
+  .container {
+    height: calc(#{$total-height} - 101px);
+    width: calc(#{$total-width} - 990px);
   }
 }
