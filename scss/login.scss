@@ -1,17 +1,17 @@
 .background-white {
-  align-items: center;
-  background-color: $white-secondary;
-  display: flex;
-  flex-direction: column;
-  height: $total-height;
-  justify-content: center;
+	align-items: center;
+	background-color: $white-secondary;
+	display: flex;
+	flex-direction: column;
+	height: $total-height;
+	justify-content: center;
 	width: $total-width;
 }
 
 .container-grey-col-2 {
 	height: 400px;
-  width: 300px;
-  background-color: $white-primary;
+	width: 300px;
+	background-color: $white-primary;
 	border-top: 8px solid $blue;
 	display: flex;
 	flex-direction: column;
@@ -36,7 +36,7 @@
 			line-height: 22px;
 			margin-bottom: 8px;
 		}
-	
+
 		.input-col-2 {
 			height: 32px;
 			width: 252px;
@@ -45,7 +45,7 @@
 			margin-bottom: 24px;
 		}
 	}
-	
+
 	.btn {
 		height: 32px;
 		width: 252px;
@@ -58,7 +58,7 @@
 		background-color: $green-lemon;
 		color: $white-secondary;
 		cursor: pointer;
-		
+
 		&:hover {
 			background-color: $dark-green;
 			color: $white-secondary;
