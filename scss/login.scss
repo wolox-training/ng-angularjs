@@ -1,4 +1,4 @@
-.background-login {
+.background-white {
   align-items: center;
   background-color: $white-secondary;
   display: flex;
@@ -8,7 +8,7 @@
 	width: $total-width;
 }
 
-.container-login {
+.container-grey-col-2 {
 	height: 400px;
   width: 300px;
   background-color: $white-primary;
@@ -16,13 +16,12 @@
 	display: flex;
 	flex-direction: column;
 
-	.login-logo {
+	.logo-col-2 {
 		height: 70px;
 		width: 212px;
-		margin: 20px 44px 0;
+		margin: 20px 44px 16px;
 	}
 	
-
 	.form-group {
 		border-bottom: 3px solid $grey;
 		padding-bottom: 24px;
@@ -30,19 +29,20 @@
 		margin: 0 24px;
 		justify-content: center;
 
-		label {
+		.label-col-2 {
 			color: $black-default;
 			font-size: 16px;
 			height: 22px;
 			line-height: 22px;
-			margin: 16px 0 8px;
+			margin-bottom: 8px;
 		}
 	
-		input {
+		.input-col-2 {
 			height: 32px;
 			width: 252px;
 			border-radius: 5px;
 			background-color: $white-secondary;
+			margin-bottom: 24px;
 		}
 	}
 	
@@ -51,34 +51,32 @@
 		width: 252px;
 		text-align: center;
 		border-radius: 5px;
+	}
 
-		.btn-green {
-			@extend .btn;
-			background-color: $green-lemon;
-			color: $white-secondary;
-			margin-top: 24px;
-			cursor: pointer;
-		}
-
-		.btn-green:hover {
-			background-color: $dark-green;
-			color: $white-secondary;
-		}
+	.btn-green {
+		@extend .btn;
+		background-color: $green-lemon;
+		color: $white-secondary;
+		cursor: pointer;
 		
-		.btn-inverted-green {
-			@extend .btn;
-			background-color: $white-secondary;
-			border: 2px solid;
-			box-sizing: border-box;
-			color: $green-lemon;
-			margin: 16px 24px 0;
-			cursor: pointer;
-		}
-
-		.btn-inverted-green:hover {
+		&:hover {
 			background-color: $dark-green;
 			color: $white-secondary;
 		}
 	}
 
+	.btn-inverted-green {
+		@extend .btn;
+		background-color: $white-secondary;
+		border: 2px solid;
+		box-sizing: border-box;
+		color: $green-lemon;
+		margin: 16px 24px 0;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $dark-green;
+			color: $white-secondary;
+		}
+	}
 }
