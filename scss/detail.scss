@@ -4,123 +4,155 @@ $badge-width: 95px;
 $container-height: 416px;
 $container-width: 900px;
 
+.back-arrow {
+  display: flex; 
+  width: 90%;
+  height: 20px;
+  margin-bottom: 33px;
+  cursor: pointer;
+  
+  &::before {
+    content: url(./assets/back-arrow-20.png);
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+  }
+}
+
 .container-book {
   background-color: $white-secondary;
   box-shadow: 4px 4px 10px 0 $shadow;
   display: flex;
   height: $container-height;
   width: $container-width;
-}
-
-.container-img {
-  position: relative;
-  height: 416px;
-  padding: 24px;
-  width: 309px;
-}
-
-.container-detail {
-  height: auto;
-  padding: 24px;
-  width: auto;
-}
-
-.badge {
-  display: flex;
-  height: $badge-height;
-  width: $badge-width;
-  position: absolute;
-  transform: rotate(15deg);
-  padding: 10px;
-  right: -5px;
-  top: 0px;
-}
-
-.header-detail {
-  align-items: center;
-  border-bottom: 4px solid $green-lemon;
-  display: flex;
-  padding-bottom: 12px;
-  width: 100%;
-}
-
-.title-book {
-  color: $black-default;
-  font-weight: 700;
-  margin-left: 8px;
-  font-size: 32px;
-  line-height: 32px;
-}
-
-.title-gender {
-  color: $grey;
-  font-weight: 700;
-  padding-left: 8px;
-  line-height: 28px;
-  font-size: 28px;
-}
-
-.detail-form {
-  margin: 36px 0 0 8px;
-}
-
-.detail-item {
-  color: $black-default;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.detail-description {
-  color: $grey;
-  margin-left: 8px;
-  font-size: 20px;
-  line-height: 20px;
+  
+  .container-img {
+    position: relative;
+    height: 416px;
+    max-width: 309px;
+    padding: 24px;
+    width: 309px;
+  
+    .badge {
+      display: flex;
+      height: $badge-height;
+      width: $badge-width;
+      position: absolute;
+      transform: rotate(15deg);
+      padding: 10px;
+      right: -5px;
+      top: 0px;
+    }
+  }
+  
+  .container-detail {
+    padding: 24px;
+  
+    .header-detail {
+      align-items: center;
+      border-bottom: 4px solid $green-lemon;
+      display: flex;
+      padding-bottom: 12px;
+      width: 100%;
+    
+      .title-book {
+        color: $black-default;
+        font-weight: 700;
+        margin-left: 8px;
+        font-size: 32px;
+        line-height: 32px;
+      }
+      
+      .title-gender {
+        color: $grey;
+        font-weight: 700;
+        padding-left: 8px;
+        line-height: 28px;
+        font-size: 28px;
+      }
+    }
+  
+    .detail-form {
+      margin: 36px 0 0 8px;
+    
+      .detail-item {
+        color: $black-default;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    
+      .detail-description {
+        color: $grey;
+        margin-left: 8px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
 }
 
 @media(max-width: $breakpoint) {
+  .back-arrow {
+    width: calc(#{$container-width} - 564px);
+    height: 20px;
+    margin-top: 33px;
+    justify-content: center;
+    align-items: center;
+  }
+
   .container-book {
     flex-direction: column;
     align-items: center;
-    height: calc(#{$container-height} + 154px);
+    height: calc(#{$container-height} + 151px);
     width: calc(#{$container-width} - 564px);
-  }
 
-  .container-img {
-    height: 337px;
-    padding: 38px 48px 0;
-    width: 336px;
-  }
-
-  .badge {
-    height: calc(#{$badge-height} - 5%);
-    padding: 8px;
-    width: calc(#{$badge-width} - 5%);
-    right: 22px;
-    top: 18px;
-  }
+    .container-img {
+      height: 337px;
+      padding: 38px 48px 0;
+      width: 336px;
   
-  .title-book {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  .title-gender {
-    font-size: 16px;
-    line-height: 16px;
-  }
-
-  .detail-form {
-    margin-top: 18px;
-  }
-
-  .detail-item {
-    font-size: 14px;
-    line-height: 14px;
-  }
-
-  .detail-description {
-    font-size: 14px;
-    line-height: 14px;
+      .badge {
+        height: calc(#{$badge-height} - 5%);
+        padding: 8px;
+        width: calc(#{$badge-width} - 5%);
+        right: 22px;
+        top: 18px;
+      }
+    }
+  
+    .container-detail {
+      height: auto;
+      padding: 18px;
+      width: 100%;
+    
+      .header-detail {
+        width: 100%;
+  
+        .title-book {
+          font-size: 24px;
+          line-height: 24px;
+        }
+      
+        .title-gender {
+          font-size: 16px;
+          line-height: 16px;
+        }
+      }
+      
+      .detail-form {
+        margin-top: 18px;
+    
+        .detail-item {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      
+        .detail-description {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
   }
 }

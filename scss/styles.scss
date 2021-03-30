@@ -2,9 +2,10 @@
   align-items: center;
   background-color: $white-primary;
   display: flex;
+  flex-direction: column;
   height: $total-height;
-  justify-content: center;
   width: $total-width;
+  padding-top: 50px;
 }
 
 .img {
@@ -40,5 +41,6 @@
   .container {
     height: calc(#{$total-height} - 101px);
     width: calc(#{$total-width} - 990px);
+    flex-direction: column-reverse;
   }
 }
