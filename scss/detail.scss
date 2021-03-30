@@ -5,16 +5,25 @@ $container-height: 416px;
 $container-width: 900px;
 
 .back-arrow {
-  display: flex; 
-  width: 90%;
+  display: flex;
+  align-items: center;
+  width: 1150px;
   height: 20px;
-  margin-bottom: 33px;
+  margin: 33px 0;
   cursor: pointer;
+
+  .text-back-arrow {
+    height: 20px;
+    width: 59px;
+    font-size: 20px;
+    line-height: 20px;
+  }
   
   &::before {
     content: url(./assets/back-arrow-20.png);
     height: 20px;
     width: 20px;
+    z-index: 1;
     margin-right: 12px;
   }
 }
@@ -25,71 +34,72 @@ $container-width: 900px;
   display: flex;
   height: $container-height;
   width: $container-width;
-  
-  .container-img {
-    position: relative;
-    height: 416px;
-    max-width: 309px;
-    padding: 24px;
-    width: 309px;
-  
-    .badge {
-      display: flex;
-      height: $badge-height;
-      width: $badge-width;
-      position: absolute;
-      transform: rotate(15deg);
-      padding: 10px;
-      right: -5px;
-      top: 0px;
-    }
-  }
-  
-  .container-detail {
-    padding: 24px;
-  
-    .header-detail {
-      align-items: center;
-      border-bottom: 4px solid $green-lemon;
-      display: flex;
-      padding-bottom: 12px;
-      width: 100%;
-    
-      .title-book {
-        color: $black-default;
-        font-weight: 700;
-        margin-left: 8px;
-        font-size: 32px;
-        line-height: 32px;
-      }
-      
-      .title-gender {
-        color: $grey;
-        font-weight: 700;
-        padding-left: 8px;
-        line-height: 28px;
-        font-size: 28px;
-      }
-    }
-  
-    .detail-form {
-      margin: 36px 0 0 8px;
-    
-      .detail-item {
-        color: $black-default;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 20px;
-      }
-    
-      .detail-description {
-        color: $grey;
-        margin-left: 8px;
-        font-size: 20px;
-        line-height: 20px;
-      }
-    }
-  }
+}
+
+.container-img {
+  position: relative;
+  height: 416px;
+  padding: 24px;
+  width: 309px;
+}
+
+.container-detail {
+  height: 100%;
+  padding: 24px;
+  width: auto;
+}
+
+.badge {
+  display: flex;
+  height: $badge-height;
+  width: $badge-width;
+  position: absolute;
+  transform: rotate(15deg);
+  padding: 10px;
+  right: -5px;
+  top: 0px;
+}
+
+.header-detail {
+  align-items: center;
+  border-bottom: 4px solid $green-lemon;
+  display: flex;
+  padding-bottom: 12px;
+  width: 100%;
+}
+
+.title-book {
+  color: $black-default;
+  font-weight: 700;
+  margin-left: 8px;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.title-gender {
+  color: $grey;
+  font-weight: 700;
+  padding-left: 8px;
+  line-height: 28px;
+  font-size: 28px;
+}
+
+.detail-form {
+  margin: 36px 0 0 8px;
+}
+
+.detail-item {
+  color: $black-default;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.detail-description {
+  color: $grey;
+  margin-left: 8px;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 @media(max-width: $breakpoint) {
