@@ -6,7 +6,7 @@
   height: $total-height;
   justify-content: flex-start;
   width: $total-width;
-  padding: 20px;
+  padding-top: 50px;
 }
 
 .img {
@@ -15,31 +15,33 @@
 }
 
 .navbar {
-  height: 70px;
-  width: 1366px;
+  align-items: center;
   background-color: $white-secondary;
-  box-shadow: 0 4px 10px 0 $shadow;
   border-top: 4px solid $blue;
+  box-shadow: 0 4px 10px 0 $shadow;
   display: flex;
+  height: 70px;
+  justify-content: space-around;
   position: fixed;
-  z-index: 100;
+  width: $total-width;
+  z-index: 1;
 
   .nav-logo { 
-    align-items: center;
-    display: flex;
     height: 70px;
-    justify-content: flex-start;
     width: 212px;
-    margin-left: 246px;
   }
 
   .nav-logout {
-    display: flex;
-    align-items: center;
-    margin-left: 39%;
+    color: $black-default;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
 
-    .text-back-arrow {
-      color: $black-default;
-    }
+@media(max-width: $breakpoint) {
+  .container {
+    height: calc(#{$total-height} - 101px);
+    width: calc(#{$total-width} - 990px);
+    flex-direction: column-reverse;
   }
 }
