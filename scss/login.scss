@@ -1,69 +1,85 @@
-.background-login {
+.background-white {
   align-items: center;
   background-color: $white-secondary;
   display: flex;
   flex-direction: column;
-  height: 768px;
+  height: $total-height;
   justify-content: center;
-  width: 1366px;
+  width: $total-width;
 }
 
-.container-login {
-	height: 400px;
+.container-grey-col-3 {
+  height: 400px;
   width: 300px;
   background-color: $white-primary;
-	border-top: 8px solid $blue;
-	display: flex;
-	flex-direction: column;
+  border-top: 8px solid $blue;
+  display: flex;
+  flex-direction: column;
 
-	.login-logo {
-		height: 70px;
-		width: 212px;
-		margin: 20px 44px 0 44px;
-	}
+  .logo-col-2 {
+    height: 70px;
+    width: 212px;
+    margin: 20px 44px 16px;
+  }
 	
-	label {
-		color: $black-default;
-		font-size: 16px;
-		height: 22px;
-		line-height: 22px;
-		margin: 16px 24px 8px 24px;
-	}
+  .form-group {
+    border-bottom: 3px solid $grey;
+    padding-bottom: 24px;
+    width: 252px;
+    margin: 0 24px;
+    justify-content: center;
 
-	input {
-		height: 32px;
-		width: 252px;
-		border-radius: 5px;
-		background-color: $white-secondary;
-		margin: 0 24px;
-	}
+    .label-col-2 {
+      color: $black-default;
+      font-size: 16px;
+      height: 22px;
+      line-height: 22px;
+      margin-bottom: 8px;
+    }
 
-	.btn-green {
-		height: 32px;
-		width: 252px;
-		margin: 24px 24px 0;
-		background-color: $green-lemon;
-		text-align: center;
-		border-radius: 5px;
-		color: $white-secondary;
-	}
+    .input-col-2 {
+      height: 32px;
+      width: 252px;
+      border-radius: 5px;
+      background-color: $white-secondary;
+      margin-bottom: 24px;
+    }
+  }
 
-	hr {
-		margin: 16px 24px 0 24px;
-		height: 3px;
-  	width: 252px;
-		background-color: $grey;
-	}
+  .btn {
+    height: 32px;
+    width: 252px;
+    text-align: center;
+    border-radius: 5px;
+  }
 
-	.btn-inverted-green {
-		background-color: $white-secondary;
-		box-sizing: border-box;
-		border: 2px solid $green-lemon;
-		border-radius: 5px;
-		color: $green-lemon;
-		height: 32px;
-		margin: 16px 24px 0;
-		text-align: center;
-		width: 252px;
-	}
+  .btn-green {
+    @extend .btn;
+    background-color: $green-lemon;
+    color: $white-secondary;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: $dark-green;
+      color: $white-secondary;
+    }
+  }
+
+  .btn-inverted-green {
+    @extend .btn;
+    background-color: $white-secondary;
+    border: 2px solid;
+    box-sizing: border-box;
+    color: $green-lemon;
+    margin: 16px 24px 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $dark-green;
+      color: $white-secondary;
+    }
+  }
 }
