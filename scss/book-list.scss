@@ -5,6 +5,10 @@
   height: 636px;
   margin: 50px 0;
   justify-content: space-around;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .card {
