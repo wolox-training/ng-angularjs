@@ -5,7 +5,7 @@ angular.module('app-bootstrap').factory('anyService', [
     const message = 'data from service';
 
     return {
-      getMessage: () => message
+      getBooks: () => message
     };
   }
 ]);

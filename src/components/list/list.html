@@ -1,0 +1,19 @@
+<!-- <nav class="navbar">
+  <img class="nav-logo" src="../../assets/LogoWolox.png" alt="Wolox logo">
+  <a href="login.html"><h4 class="nav-logout">Logout</h4></a>
+</nav> -->
+<div class="container">
+  <div class="search">
+    <input type="search-input" class="search-input" name="search" placeholder="Buscá por titulo de tu libro...">
+    <a href=""><img class="icon" [src]="book.image_url" alt="path search"></a>
+  </div>
+  <div class="container-list">
+    <a href="index.html" ng-repeat="book in $ctrl.books">
+      <div class="card">
+        <img class="card-img" src="{{book.image_url}}" alt="book cover">
+        <h4 class="card-title">{{book.title}}</h4>
+        <h5 class="card-autor">{{book.author}}</h5>
+      </div>
+    </a>
+  </div>
+</div>

@@ -18,10 +18,10 @@ $container-width: 900px;
     font-size: 20px;
     line-height: 20px;
   }
-  
+
   &::before {
-    content: url(./assets/back-arrow-20.png);
     height: 20px;
+    // content: url('../../assets/back-arrow-20.png');
     width: 20px;
     z-index: 1;
     margin-right: 12px;
@@ -29,7 +29,7 @@ $container-width: 900px;
 }
 
 .container-book {
-  background-color: $white-secondary;
+  background-color: $white;
   box-shadow: 4px 4px 10px 0 $shadow;
   display: flex;
   height: $container-height;
@@ -57,12 +57,12 @@ $container-width: 900px;
   transform: rotate(15deg);
   padding: 10px;
   right: -5px;
-  top: 0px;
+  top: 0;
 }
 
 .header-detail {
   align-items: center;
-  border-bottom: 4px solid $green-lemon;
+  border-bottom: 4px solid $wolox-green;
   display: flex;
   padding-bottom: 12px;
   width: 100%;
@@ -102,7 +102,8 @@ $container-width: 900px;
   line-height: 20px;
 }
 
-@media(max-width: $breakpoint) {
+@media (max-width: $breakpoint) {
+
   .back-arrow {
     width: calc(#{$container-width} - 564px);
     height: 20px;
@@ -116,52 +117,52 @@ $container-width: 900px;
     align-items: center;
     height: calc(#{$container-height} + 151px);
     width: calc(#{$container-width} - 564px);
+  }
 
-    .container-img {
-      height: 337px;
-      padding: 38px 48px 0;
-      width: 336px;
-  
-      .badge {
-        height: calc(#{$badge-height} - 5%);
-        padding: 8px;
-        width: calc(#{$badge-width} - 5%);
-        right: 22px;
-        top: 18px;
+  .container-img {
+    height: 337px;
+    padding: 38px 48px 0;
+    width: 336px;
+
+    .badge {
+      height: calc(#{$badge-height} - 5%);
+      padding: 8px;
+      width: calc(#{$badge-width} - 5%);
+      right: 22px;
+      top: 18px;
+    }
+  }
+
+  .container-detail {
+    height: auto;
+    padding: 18px;
+    width: 100%;
+
+    .header-detail {
+      width: 100%;
+
+      .title-book {
+        font-size: 24px;
+        line-height: 24px;
+      }
+
+      .title-gender {
+        font-size: 16px;
+        line-height: 16px;
       }
     }
-  
-    .container-detail {
-      height: auto;
-      padding: 18px;
-      width: 100%;
-    
-      .header-detail {
-        width: 100%;
-  
-        .title-book {
-          font-size: 24px;
-          line-height: 24px;
-        }
-      
-        .title-gender {
-          font-size: 16px;
-          line-height: 16px;
-        }
+
+    .detail-form {
+      margin-top: 18px;
+
+      .detail-item {
+        font-size: 14px;
+        line-height: 14px;
       }
-      
-      .detail-form {
-        margin-top: 18px;
-    
-        .detail-item {
-          font-size: 14px;
-          line-height: 14px;
-        }
-      
-        .detail-description {
-          font-size: 14px;
-          line-height: 14px;
-        }
+
+      .detail-description {
+        font-size: 14px;
+        line-height: 14px;
       }
     }
   }
