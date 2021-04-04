@@ -4,15 +4,15 @@
 </nav> -->
 <div class="container">
   <div class="search">
-    <input type="search-input" class="search-input" name="search" placeholder="Buscá por titulo de tu libro...">
-    <a href=""><img class="icon" [src]="book.image_url" alt="path search"></a>
+    <input type="search-input" ng-model="$ctrl.search" class="search-input" name="search" placeholder="Buscá por titulo de tu libro...">
+    <img class="icon" src='../../assets/path.png' alt="path search">
   </div>
   <div class="container-list">
-    <a href="index.html" ng-repeat="book in $ctrl.books">
+    <a href="index.html" ng-repeat="book in $ctrl.books | filter: $ctrl.search">
       <div class="card">
         <img class="card-img" src="{{book.image_url}}" alt="book cover">
-        <h4 class="card-title">{{book.title}}</h4>
-        <h5 class="card-autor">{{book.author}}</h5>
+        <h4 class="card-title">{{book.title | limitTo:16}}</h4>
+        <h5 class="card-autor">{{book.author | limitTo:20}}</h5>
       </div>
     </a>
   </div>
