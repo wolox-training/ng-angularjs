@@ -6,7 +6,7 @@ $container-width: 900px;
 
 .back-arrow {
   display: flex;
-  width: 1366px;  
+  width: $total-width;  
   height: 20px;
   padding: 33px;
   cursor: pointer;
@@ -15,7 +15,7 @@ $container-width: 900px;
     content: url(./assets/back-arrow-20.png);
     height: 20px;
     width: 20px;
-    z-index: 100;
+    z-index: 1;
     margin-right: 12px;
   }
 }

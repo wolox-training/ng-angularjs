@@ -7,10 +7,6 @@
   justify-content: space-around;
 }
 
-.card:hover {
-  transform: scale(1.1);
-}
-
 .card {
   background-color: $white-secondary;
   box-shadow: 4px 4px 10px 0 $shadow;
@@ -20,6 +16,10 @@
   margin-top: 36px;
   width: 198px;
   
+  &:hover {
+    transform: scale(1.1);
+  }
+
   .card-title {
     color: $black-default;
     font-weight: 700;
@@ -27,7 +27,7 @@
     font-size: 16px;
     line-height: 16px;
   }
-
+  
   .card-autor {
     color: $grey;
     margin:8px 0 0 24px ;
