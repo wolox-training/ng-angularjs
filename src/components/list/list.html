@@ -8,9 +8,9 @@
     <img class="icon" src='../../assets/path.png' alt="path search">
   </div>
   <div class="container-list">
-    <a href="index.html" ng-repeat="book in $ctrl.books | filter: $ctrl.search">
+    <a onclick="index.html" ng-repeat="book in $ctrl.books | filter: $ctrl.search">
       <div class="card">
-        <img class="card-img" src="{{book.image_url}}" alt="book cover">
+        <img class="card-img" ng-src="{{$ctrl.showImg(book)}}" alt="book cover">
         <h4 class="card-title">{{book.title | limitTo:16}}</h4>
         <h5 class="card-autor">{{book.author | limitTo:20}}</h5>
       </div>

@@ -88,5 +88,13 @@ angular.module('app-bootstrap').component('list', {
         image_url: 'http://wolox-training.s3.amazonaws.com/uploads/41DNuJfahyL._SX322_BO1_204_203_200_.jpg'
       }
     ];
+
+    this.showImg = function(currentBook) {
+      if (currentBook.image_url === null) {
+        return '../../assets/book-cover.png';
+      } else {
+        return currentBook.image_url;
+      }
+    };
   }]
 });
