@@ -201,7 +201,7 @@ $container-width: 900px;
       display: grid;
       grid-template-columns: 325px 1fr;
       grid-template-rows: 100px 1fr;
-      grid-template-areas: "detai detail"
+      grid-template-areas: "image detail"
                            "image detail";
 
       .container-img {
@@ -210,6 +210,7 @@ $container-width: 900px;
         margin: 45px 32px 56px;
         padding: 0;
         grid-area: image;
+        align-self: end;
 
         .badge {
           height: calc(#{$badge-height} + 3%);
