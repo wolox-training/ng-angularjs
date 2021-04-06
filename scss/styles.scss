@@ -37,11 +37,3 @@
     line-height: 18px;
   }
 }
-
-@media(max-width: $breakpoint) {
-  .container {
-    height: calc(#{$total-height} - 101px);
-    width: calc(#{$total-width} - 990px);
-    flex-direction: column-reverse;
-  }
-}
