@@ -1,0 +1,13 @@
+<div class="background-white">
+  <form class="container-grey-col-3" ng-submit="$ctrl.submit()" name="loginForm" autocomplete="off">
+    <img class="logo-col-2" src="../../assets/LogoWolox.png" alt="Wolox logo">
+    <div class="form-group">
+      <label class="label-col-2" for="mail">Email</label>
+      <input ng-class="{'input-col-2 error':loginForm.user.$dirty && loginForm.user.$invalid, 'input-col-2':loginForm.user.$valid || !loginForm.user.$dirty}" type="email" name="user" ng-model="$ctrl.user" required>
+      <label class="label-col-2" for="pass">Password</label>
+      <input ng-class="{'input-col-2 error':loginForm.pass.$dirty && loginForm.pass.$invalid, 'input-col-2':loginForm.pass.$valid || !loginForm.pass.$dirty}" type="password" name="pass" ng-model="$ctrl.pass" required>
+      <button type="submit" class="btn btn-green" ng-disabled="loginForm.$invalid">Login</button>
+    </div>
+    <button class="btn-inverted-green">Sign up</button>
+  </form>
+</div>
