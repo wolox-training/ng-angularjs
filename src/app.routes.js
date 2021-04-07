@@ -3,9 +3,9 @@ const angular = require('angular');
 angular.module('app-bootstrap').config(['$stateProvider', '$urlRouterProvider',
   function ($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('home', {
+      .state('login', {
         url: '/',
-        component: 'centered'
+        component: 'login'
       })
       .state('component1', {
         url: '/component1',
@@ -23,9 +23,9 @@ angular.module('app-bootstrap').config(['$stateProvider', '$urlRouterProvider',
         url: '/list',
         component: 'list'
       })
-      .state('login', {
-        url: '/login',
-        component: 'login'
+      .state('centered', {
+        url: '/centered',
+        component: 'centered'
       });
     $urlRouterProvider.otherwise('/');
   }
